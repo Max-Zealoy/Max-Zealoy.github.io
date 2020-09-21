@@ -1,0 +1,106 @@
+
+
+body {
+    
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+.logo{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.logo a {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.logo span{
+        display: block;
+        font-size: large;
+        font-weight: 450;
+        margin-top: -20px;
+    
+    
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {  
+display: none;
+width: 100%;
+position: absolute;
+justify-content: end;
+text-align: center;
+background: #484848a6;
+height: 600px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: xx-large;
+    color: black;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*smaller devices */
+@media (max-width: 760px) {
+    .logo a {
+        width: 180px;
+    
+    }
+    
+    
+    .logo span {
+        font-size: medium;
+        font-weight: 420;
+        
+    }
+    
+    }
+    
