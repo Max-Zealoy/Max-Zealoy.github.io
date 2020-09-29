@@ -9,6 +9,7 @@ body {
     font-family: 'Dosis', sans-serif;
     text-align: left;
     -webkit-text-size-adjust: 100%;
+    margin: auto;
 }
 
 
@@ -86,6 +87,31 @@ height: 600px;
   background-color: #ddd;
   color: black;
 }
+
+
+.paracontainer{
+overflow: hidden; /*Maybe don't need makes items hidden if going over element */
+
+}
+
+.paraslider{
+  background: url("../img/para1.png") repeat-x;
+  width: 17280px; /* picture size times x3 */
+  height: 1128px;
+  animation:slide  20s 0s linear infinite;
+  
+}
+
+
+@keyframes slide{
+
+  0%     { -webkit-transform: translate3d( 0%, 0px, 0px); 
+  }
+   100%     { -webkit-transform: translate3d(-5760px, 0px, 0px); }
+}
+
+
+
 
 
 /*smaller devices */
