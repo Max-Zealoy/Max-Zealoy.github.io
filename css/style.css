@@ -132,11 +132,11 @@ nav a:hover {
 }
 @keyframes top{
 
-  0% {   top: .65em; left: 3px;
+  0% {   top: .64em; left: 3px;
 
   }
 
-  25% {   top: .65em; left: 23px;
+  25% {   top: .64em; left: 23px;
 
   }
   50% {   top: -.02em;  left: 3px;
@@ -146,7 +146,7 @@ nav a:hover {
 
     }
 
-  100% { top: .65em; left: 3px;
+  100% { top: .64em; left: 3px;
   
   }
 }
@@ -160,7 +160,8 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 .paraslider{
   background: url("../img/para1.png") repeat-x;
   width: 17280px; /* picture size times x3 */
-  height: 1128px;
+  height: 640px;
+  margin-top: 25%;
   animation:slide  20s 0s linear infinite;
   
 }
