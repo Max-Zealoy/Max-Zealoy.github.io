@@ -18,12 +18,19 @@ body {
     text-align: left;
     -webkit-text-size-adjust: 100%;
     margin: auto;
+    width: 100%;
+    transition: all 800ms ease;
+}
+
+button{
+  transition: all 800ms ease;
 }
 
 
 img {
     width: 100%;
     height: auto;
+    transition: all 800ms ease;
 }
 
 a{
@@ -152,6 +159,72 @@ nav a:hover {
 }
 
 
+/* Main H1text*/
+
+#maintext{
+
+  margin: auto;
+  max-width: 940px;
+
+}
+
+
+#maintext h1{
+  color: var(--black);
+  font-size: 39px;
+  font-weight: 800;
+}
+
+.active {
+
+  color:var(--first-color);
+  animation: colorchange 3s linear 0s infinite alternate; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 3s linear 0s infinite alternate; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {color: rgb(249 170 28 / 40%); color: var(--first-color);}
+  100% {color: rgb(249 228 169 / 76%); color: var(--design);}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {color: rgb(249 170 28 / 40%); color: var(--first-color);}
+  100% {color: rgb(249 228 169 / 76%); color: var(--design);}
+}
+
+
+.typewriter{
+  display: contents;
+}
+
+.typewriter h3 {
+  overflow: hidden; /* Gör så att det inte syns innan animationen */
+  height: 20px;
+  border-right: .19em solid var(--second-color); /* The typwriter cursor */
+  white-space: nowrap; /* Håller kvar på samma linje */
+  letter-spacing: .15em; /* Mellanrum mellan bokstäverna */
+  width: min-content;
+  animation: 
+    typing 2.6s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--second-color); }
+}
+
+
+
+
 .paracontainer{
 overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 
@@ -175,9 +248,6 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 }
 
 
-
-
-
 /*smaller devices */
 @media (max-width: 760px) {
     .logo a {
@@ -191,7 +261,7 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
         font-weight: 420;
         
     }
-    
+
     }
     
 

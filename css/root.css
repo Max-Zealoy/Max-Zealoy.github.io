@@ -4,7 +4,9 @@
     --second-color:#3667a4;
     --third-color: #4dce14;
     --background-color:#2E3237EE;
-    --black:#000000;
+    --black: #00000085;
+    --design:#11a9bc;
+    --designlight:#c04ccfb7;
     font-family: 'Dosis', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {

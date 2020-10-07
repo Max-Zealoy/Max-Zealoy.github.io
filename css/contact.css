@@ -1,0 +1,395 @@
+h1, h2, h3, h4, h5, h6 {
+
+    margin: auto;
+
+}
+body{
+  width: 80%;
+}
+
+h2{
+
+  position: relative;
+    height: inherit;
+}
+
+
+.contact1{
+
+    grid-area:contact1 ;
+
+}
+.contact2{
+
+    grid-area:contact2 ;
+    display: flex;
+
+}
+.contact2 img{
+
+  
+    width: 325px;
+    height: auto;
+    position: relative;
+
+}
+
+
+.hello{
+  color:var(--first-color);
+  grid-area: hello;
+  width: 100px;
+  padding: 15px 32px;
+  cursor: pointer;
+  padding: inherit;
+  border-radius: 10px;
+  height: 36px;
+  position: absolute;
+  margin: auto;
+  background: var(--second-color);
+  border: solid var(--black);
+}
+
+
+.fa {
+  padding: 18px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 5px;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #125688;
+  color: white;
+  grid-area: in;
+
+}
+
+
+
+#contact-icons{
+
+width: 100%;
+height: auto;
+display: flex;
+padding-left: 0px;
+margin: -7px -88px 10px 133px;
+
+}
+#contact-grid{
+    width: 90%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    " hello hello hello hello hello fb fb fb  in tw . ."
+  ;
+
+}
+
+
+.typewriter{
+    display: contents;
+}
+
+.typewriter h3 {
+    overflow: hidden; /* Gör så att det inte syns innan animationen */
+    height: 20px;
+    border-right: .19em solid var(--second-color); /* The typwriter cursor */
+    white-space: nowrap; /* Håller kvar på samma linje */
+    letter-spacing: .15em; /* Mellanrum mellan bokstäverna */
+    width: min-content;
+    animation: 
+      typing 2.6s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--second-color); }
+  }
+  
+
+
+   h2::after {
+    position: absolute;
+    content: "";
+    width: 83%;
+    color: var(--black);
+    height: 65%;
+    line-height: 48px;
+    top: 3em;
+    text-align: left;
+    margin: auto;
+    left: 10%;
+    top: 27px;
+    animation: skriv 5.5s linear 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes skriv {
+    0% {
+      content: "H";
+    }
+    4% {
+      content: "Ha";
+    }
+    8% {
+      content: "Har";
+    }
+    12% {
+      content: "Har d ";
+    }
+    16% {
+      content: "Har du";
+    }
+    20% {
+      content: "Har du h;
+    }
+    24% {
+      content: "Har du ho";
+    }
+    28% {
+      content: "Har du hon";
+    }
+    32% {
+      content: "Har du honu";
+    }
+    36% {
+      content: "Har du honun";
+    }
+    40% {
+      content: "Har du honung";
+    }
+    44% {
+      content: "Har du honung";
+    }
+    48% {
+      content: "Har du honung?";
+    }
+    52% {
+      content: "Har du honung";
+    }
+    56% {
+      content: "Har du honu ";
+    }
+    60% {
+      content: "Har du h ";
+    }
+    64% {
+      content: "Har d";
+    }
+    68% {
+      content: "Ha ";
+    }
+    72% {
+      content: ";
+    }
+    76% {
+      content: "S";
+    }
+    80% {
+      content: "Skr";
+    }
+    84% {
+      content: "Skri";
+    }
+    88% {
+      content: "Skriv";
+    }
+    92% {
+      content: "Skriv g";
+    }
+    93% {
+      content: "Skriv gä";
+    }
+    96% {
+      content: "Skriv gärn";
+    }
+    100% {
+      content: "Skriv gärna!" ;
+    }
+}
+
+
+  /* Kontaktformulär börjar */
+
+
+
+.contain {
+  width: 90%;
+  margin: 10% auto;
+  padding: 1em;
+  
+}
+
+
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--darkcolor);
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: 1px solid var(--darkcolor);
+}
+
+.wrapper {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  form p {
+    margin: 10px !important;
+  
+}
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  background: var(--darkcolor);
+  color:var(--lightcolor);
+  text-align: center;
+  height: 614px;
+}
+.contacts h3 {
+  margin-top: 10px;
+}
+.contact-none a{
+
+  text-decoration: none;
+  color: var(--lightcolor);
+}
+
+.contain img{
+
+  border-style: none;
+  width: 210px;
+  margin-top: 26px;
+}
+
+iframe{
+  width:-webkit-fill-available;
+  height: 448px;
+  border: 1;
+  
+}
+
+.form {
+  background: var(--lightcolor);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 10px;
+}
+form label {
+  display: block;
+}
+form p {
+  font-size: large;
+  color:var(--black);
+
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+.contain button,
+input,
+textarea {
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #dfdfdf8a;
+  resize: none;
+  border-radius: 10px;
+}
+
+.contain button:hover,input:hover,textarea:hover{
+background-color: rgb(240, 235, 218);
+}
+#submit-contact {
+  background: none;
+    width: 100%;
+    border: solid 1px var(--black);
+    height: 80px;
+    cursor: pointer;
+    margin-top: -25px;
+    font-size: x-large;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: #4dce147d;
+
+}
+#submit-contact:hover, #submit-contact:focus {
+  background: #4dce14c9;
+  outline: 0;
+}
+
+
+#reset-contact{
+  text-align: -webkit-center;
+  background: #2f25253d;
+  border: 0;
+  cursor: pointer;
+  height: 50px;
+  display: block;
+  margin-top: -25px;
+  font-size: large;
+  margin-bottom: 5px;
+  border-radius: 25px;
+}
+#reset-contact:hover {
+  background: #2f252594;
+  color: var(--first-color);
+  outline: 0;
+}
+
+/*medium devices */
+@media (max-width: 1280px) {
+
+  body{
+    width: 100%;
+}
+}
+
+
+/*smaller devices */
+@media (max-width: 760px) {
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 60px 5px 0px 5px;
+}
+}
