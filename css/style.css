@@ -60,6 +60,30 @@ a{
     
 }
 
+.fa {
+  padding: 18px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 5px;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #b60d9a;
+  color: white;
+  grid-area: in;
+
+}
+
 nav {
   position: relative;
 }
@@ -249,7 +273,7 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 
 
 /*smaller devices */
-@media (max-width: 760px) {
+@media (max-width: 1080px) {
     .logo a {
         width: 180px;
     
@@ -261,7 +285,11 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
         font-weight: 420;
         
     }
+    #maintext{
 
+      margin: 10px;
+    
+    }
     }
     
 
