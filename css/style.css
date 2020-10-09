@@ -26,6 +26,19 @@ button{
   transition: all 800ms ease;
 }
 
+.hello{
+  color:var(--first-color);
+  width: 100px;
+  padding: 15px 32px;
+  cursor: pointer;
+  padding: inherit;
+  border-radius: 10px;
+  height: 77px;
+  position: absolute;
+  margin: auto;
+  background: var(--second-color);
+  border: solid var(--black);
+}
 
 img {
     width: 100%;
@@ -60,29 +73,20 @@ a{
     
 }
 
-.fa {
-  padding: 18px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 5px;
-  border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  margin: auto;
+
+
+
+.fa-linkedin-in {
+  position: relative;
+  top: 0;
+  margin: 24px 120px 0px 120px;
+  font-size: x-large;
+}
+.fa-linkedin-in:hover {
+  
+color:  var(--second-color);
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-linkedin {
-  background: #b60d9a;
-  color: white;
-  grid-area: in;
-
-}
 
 nav {
   position: relative;
@@ -226,10 +230,11 @@ nav a:hover {
 
 .typewriter h3 {
   overflow: hidden; /* Gör så att det inte syns innan animationen */
-  height: 20px;
-  border-right: .19em solid var(--second-color); /* The typwriter cursor */
-  white-space: nowrap; /* Håller kvar på samma linje */
-  letter-spacing: .15em; /* Mellanrum mellan bokstäverna */
+  height: 21px;
+  border-right: .19em solid var(--first-color);
+  white-space: nowrap;
+  letter-spacing: .15em;
+  margin-left: 1px;
   width: min-content;
   animation: 
     typing 2.6s steps(40, end),
@@ -243,7 +248,7 @@ nav a:hover {
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: var(--second-color); }
+  50% { border-color: var(--first-color); }
 }
 
 
@@ -272,6 +277,16 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 }
 
 
+#boxes {
+  width: 90%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4,1fr);
+
+
+}
+
 /*smaller devices */
 @media (max-width: 1080px) {
     .logo a {
@@ -291,5 +306,8 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
     
     }
     }
+
+
+    
     
 
