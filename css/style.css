@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 header {
   position: fixed;
   top: 0;
@@ -277,6 +280,47 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 }
 
 
+
+
+.section-port-web{
+ 
+  display: block;
+  width: 68%;
+  margin: auto;
+  
+  
+}
+
+
+
+.sectiontext {
+  padding: 15px;
+  text-align: center;
+  font-size: x-large;
+  font-family: monospace;
+  position: relative;
+  background-color: #f0f8ff6e;
+}
+  
+.section-port-web img{
+
+  max-width: 100%;
+  height: auto;
+  border:2px solid #fff;
+  -moz-box-shadow: 10px 10px 5px #7396af;
+  -webkit-box-shadow: 10px 10px 5px #7396af;
+  box-shadow: 10px 10px 5px #7396af;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+  margin: 140px 40px 10px 0px;
+  position: relative;
+
+
+}
+
+
+
 #boxes {
   width: 90%;
     margin: 100px auto;
@@ -286,6 +330,8 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 
 
 }
+
+
 
 /*smaller devices */
 @media (max-width: 1080px) {
