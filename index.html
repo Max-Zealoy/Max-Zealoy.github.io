@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="css/root.css">
 <link rel="shortcut icon" type="image/png" href="./favicon1.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-<script type="text/javascript" src="./javascript/hamburger.js"></script>
 <title>Max-Frontend</title>
 </head>
 
@@ -26,9 +25,10 @@
 <nav>
 <!-- Topp Hamburgar Menu -->
 <!-- Navigations länker -->
-<div id="myLinks">
-  <a href="index.html">Hem</a>
-  <a href=#portfolio.html">Portfolio</a>
+<div id="myLinks"onclick="myFunction()">
+
+  <a href=#>Hem</a>
+  <a href=index.html#portfolio>Portfolio</a>
   <a href=#contact.html">Kontakt</a>
 </div>
 </nav>
@@ -61,9 +61,24 @@
    <i class="fab fa-linkedin-in"></i></a>
 
 
+ 
+<div class="aboutmebox">
+ <p class="aboutmetitle" >Hi, I'm Max</p>
+ <div id="containertop">
+<p class="aboutme">
+
+I started learning and developing websites when I lived and worked in Japan as an English nursery teacher.
+
+I've always been interested in crafting with my hands and my mind. I love having many projects and recently I'm trying to learn how to implement my own code into Wordpress.
+
+Right now I'm back to school at Jensen vocational university.
+
+My goal is to become a better Front-end developer.
+</p>
+<div class="aboutmeimg"><img src="./img/contact-img/testbear.png" alt="bear"></div>
 </div>
-
-
+</div>
+</div>
 <div class="section-port-web-img">
   <div class="section-port-web">
 <a target="_blank" href="./img/megu.jpg">
@@ -77,13 +92,17 @@
 
 
 
-
 <div id=boxes>
 </div>
-<section id= "porfolio">
+<section id= "portfolio">
+  <div class="parallax_img" id="paraimg"></div>
+  <div class="border-line" id="paraimg"></div>
+  <div class="parallax_img2" id="paraimg"></div>
 
 </section>
 
+<script type="text/javascript" src="./javascript/hamburger.js"></script>
+<script type="text/javascript" src="./javascript/smooth.scroll.js"></script>
 
 </body>
 

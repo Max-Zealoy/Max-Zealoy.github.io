@@ -55,14 +55,15 @@ h3 {
           transform-style: preserve-3d;
   -webkit-transform: rotateX(11deg) rotateY(16.5deg);
           transform: rotateX(11deg) rotateY(16.5deg);
-  min-width: 595px;
+  min-width: 200px;
 }
 
 .card {
   border-radius: 15px;
   box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
   display: inline-block;
-  height: 250px;
+  height: 200px;
+  width: 50%;
   overflow: hidden;
   -webkit-perspective: 1200px;
           perspective: 1200px;
@@ -82,12 +83,12 @@ h3 {
   margin-right: 30px;
 }
 
-.card__img {
+.card__img{
   position: relative;
   height: 100%;
 }
 
-.card__bg {
+.card__bg{
   bottom: -50px;
   left: -50px;
   position: absolute;
@@ -152,23 +153,12 @@ h3 {
   margin-bottom: 3px;
 }
 
-.notice {
-  background: gold;
-  border-top-left-radius: 6px;
-  bottom: 0;
-  font-family: monospace;
-  font-size: 14px;
-  padding: 8px 10px;
-  position: absolute;
-  right: -20px;
-}
-
 .twitter__link {
   cursor: pointer;
   position: absolute;
   right: -10px;
   top: 12px;
-  z-index: -1;
+  opacity: 1;
   background: #00aced;
   border-radius: 20px;
   height: 30px;

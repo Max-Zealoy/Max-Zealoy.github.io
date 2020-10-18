@@ -333,11 +333,78 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 
 
 
+.parallax_img {
+	height: 800px;
+	background-image: url('../img/ocean1.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.border-line {
+	height: 300px;
+	background-color: rgb(34, 180, 180);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
 
+.parallax_img2 {
+	height: 800px;
+	background-image: url('../img/test.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
 
+.aboutmebox{
+padding: 75px 10px 16px 10px;
+
+}
+.aboutmetitle {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 0px;
+  font-family: Montserrat, sans-serif;
+  color: #21262f;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.aboutme{
+    grid-area: aboutme;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 12px;
+    padding-bottom: 0px;
+    font-family: Esteban, sans-serif;
+    color: #21262f;
+    font-size: 18px;
+    line-height: 28px;
+}
+.aboutmeimg{
+  grid-area: aboutmeimg;
+  width: 300px;
+  margin: auto;
+}
+
+#containertop {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:  repeat(2, 1fr);
+  grid-template-areas: 
+  "aboutme aboutme aboutme aboutme aboutme aboutme"
+  "aboutmeimg aboutmeimg aboutmeimg aboutmeimg aboutmeimg aboutmeimg";
+
+}
 
 /*smaller devices */
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .logo a {
         width: 180px;
     
@@ -354,8 +421,16 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
       margin: 10px;
     
     }
+    .parallax_img {
+      background-attachment: inherit;
     }
-
+  }
+    @media screen and (max-width: 450px) {
+     body{ 
+    margin: auto;
+    width: 350px;
+    }
+  }
 
     
     
