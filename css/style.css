@@ -41,6 +41,7 @@ button{
   margin: auto;
   background: var(--second-color);
   border: solid var(--black);
+  margin-top: 30px;
 }
 
 img {
@@ -82,7 +83,7 @@ a{
 .fa-linkedin-in {
   position: relative;
   top: 0;
-  margin: 24px 120px 0px 120px;
+  margin: 57px 120px 0px 120px;
   font-size: x-large;
 }
 .fa-linkedin-in:hover {
@@ -285,7 +286,7 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 .section-port-web{
  
   display: block;
-  width: 68%;
+  width: 80%;
   margin: auto;
   
   
@@ -313,7 +314,6 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
   -moz-border-radius:25px;
   -webkit-border-radius:25px;
   border-radius:25px;
-  margin: 140px 40px 10px 0px;
   position: relative;
 
 
@@ -360,7 +360,7 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 }
 
 .aboutmebox{
-padding: 75px 10px 16px 10px;
+padding: 80px 10px 0px 10px;
 
 }
 .aboutmetitle {
@@ -380,7 +380,7 @@ padding: 75px 10px 16px 10px;
     padding-right: 12px;
     padding-bottom: 0px;
     font-family: Esteban, sans-serif;
-    color: #21262f;
+    color: var(--background-color);
     font-size: 18px;
     line-height: 28px;
 }
@@ -424,13 +424,23 @@ padding: 75px 10px 16px 10px;
     .parallax_img {
       background-attachment: inherit;
     }
+    .aboutmetitle {
+      font-size: 25px;
+      font-weight: 600;
+  
   }
-    @media screen and (max-width: 450px) {
-     body{ 
-    margin: auto;
-    width: 350px;
-    }
-  }
+  .section-port-web {
+    width: 90%;
+}
+}
+   
+  @media screen and (max-width: 350px) {
+    body{ 
+   margin: auto;
+   width: 325px;
+   }
+ }
+
 
     
     
