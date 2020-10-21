@@ -8,7 +8,6 @@ header {
   z-index: 10000;
   height: 72px;
   width: 100%;
-  background-color: var(--background-color);
 }
 
 body {
@@ -105,21 +104,21 @@ justify-content: end;
 text-align: center;
 background: var(--background-color);
 height: 2000px;
-margin-top: 72px;
 }
 
 /* Fixa nav meny länkarna */
 nav a {
   color: var(--first-color);
   text-decoration: none;
-  width: 300px;
+  width: 240px;
   margin: auto;
   font-size: 28px;
   border-radius: 66px;
   font-family: 'Dosis', sans-serif;
   display: block;
-  padding: 25px;
+  padding: 40px;
   height: 3%;
+  margin-top: 70px;
 }
 
 /* Lägg till bakgrunds-färg (on mouse-hover) */
@@ -139,8 +138,8 @@ nav a:hover {
   margin-top: 0.5em;
   margin-right: 0.3em;
   border-radius: 9px;
-  border-top: 0.3em solid var(--first-color);
-  border-bottom: 0.3em solid var(--first-color);
+  border-top: 0.3em solid #857272;
+  border-bottom: 0.3em solid #857272;;
   animation:bounce 1s infinite;
 }
 .hamburger:hover {
@@ -342,7 +341,7 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 	background-size: 100% auto;
 }
 .border-line {
-	height: 300px;
+	height: 130px;
 	background-color: rgb(34, 180, 180);
 	background-attachment: fixed;
 	background-position: center;
@@ -402,6 +401,14 @@ padding: 80px 10px 0px 10px;
   "aboutmeimg aboutmeimg aboutmeimg aboutmeimg aboutmeimg aboutmeimg";
 
 }
+
+.border-line h2{
+
+  text-align: center;
+  padding-top: 20px;
+  font-size: 50px;
+}
+
 
 /*smaller devices */
 @media screen and (max-width: 1080px) {
