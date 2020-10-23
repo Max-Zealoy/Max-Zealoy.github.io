@@ -314,6 +314,8 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
   -webkit-border-radius:25px;
   border-radius:25px;
   position: relative;
+  margin-top: 10%;
+  margin-left: -1%;
 
 
 }
