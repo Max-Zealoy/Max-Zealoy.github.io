@@ -195,7 +195,7 @@ nav a:hover {
 #maintext{
 
   margin: auto;
-  max-width: 940px;
+  max-width: 970px;
 
 }
 
@@ -285,7 +285,7 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 .section-port-web{
  
   display: block;
-  width: 80%;
+  width: 60%;
   margin: auto;
   
   
@@ -322,17 +322,6 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 
 
 
-#boxes {
-  width: 90%;
-    margin: 100px auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4,1fr);
-
-
-}
-
-
 
 .parallax_img {
 	height: 800px;
@@ -361,7 +350,7 @@ overflow: hidden; /*Maybe don't need makes items hidden if going over element */
 }
 
 .aboutmebox{
-padding: 80px 10px 0px 10px;
+padding: 80px 0px 0px 0px;
 
 }
 .aboutmetitle {
@@ -378,7 +367,7 @@ padding: 80px 10px 0px 10px;
     grid-area: aboutme;
     margin-top: 0px;
     padding-top: 0px;
-    padding-right: 12px;
+    padding-right: 0px;
     padding-bottom: 0px;
     font-family: Esteban, sans-serif;
     color: var(--background-color);
@@ -407,13 +396,13 @@ padding: 80px 10px 0px 10px;
 .border-line h2{
 
   text-align: center;
-  padding-top: 20px;
-  font-size: 50px;
+  padding-top: 28px;
+  font-size: 40px;
 }
 
 
 /*smaller devices */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1030px) {
     .logo a {
         width: 180px;
     
@@ -427,7 +416,7 @@ padding: 80px 10px 0px 10px;
     }
     #maintext{
 
-      margin: 10px;
+      margin: 8px;
     
     }
     .parallax_img {
@@ -441,6 +430,21 @@ padding: 80px 10px 0px 10px;
   .section-port-web {
     width: 90%;
 }
+.aboutme{
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.border-line {
+  height: 90px;
+}
+.border-line h2{
+
+  text-align: center;
+  padding-top: 19px;
+  font-size: 30px;
+}
+
 }
    
   @media screen and (max-width: 350px) {
