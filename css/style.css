@@ -436,6 +436,9 @@ position: relative;
         font-weight: 420;
         
     }
+    nav a {
+  margin-top: 20px;
+}
     #maintext{
 
       margin: 8px;
