@@ -391,13 +391,13 @@ padding: 80px 0px 0px 0px;
 #photogrid img{
 max-width: 100%;
 height: auto;
-border: 6px solid #fff;
+border: 6px solid #8e2d2d1f;
 -moz-box-shadow: 10px 10px 5px #7396af;
 -webkit-box-shadow: 10px 10px 5px #7396af;
 box-shadow: 10px 0px 10px 5px #7396af;
 -moz-border-radius: 25px;
 -webkit-border-radius: 25px;
-border-radius: 15px;
+border-radius: 40px;
 position: relative;
 }
 
@@ -461,6 +461,9 @@ position: relative;
         font-weight: 420;
         
     }
+    nav a {
+  margin-top: 20px;
+}
     #maintext{
 
       margin: 8px;
@@ -497,6 +500,7 @@ position: relative;
   width: 90%;
   display: grid;
   margin-top: 20px;
+  margin-left: 12px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-bottom: 160px;
