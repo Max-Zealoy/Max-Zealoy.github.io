@@ -90,9 +90,7 @@ My goal is to become a better Front-end developer.
     <div class="section-port-web">
       <div class="sectiontext">A jewelry website I'm developing on Wordpress</div>
 
-  <a target="_blank" href="./img/megu.jpg">
-    <img src="./img/megu.jpg" alt="jewelry website">
-    </a>
+    <img id ="jewelry"src="./img/megu.jpg" alt="jewelry website" onclick=somefunct(this)>
   
   
   </div>
@@ -108,37 +106,36 @@ My goal is to become a better Front-end developer.
 <div class="sectiontext">Designs</div>
 <div id ="photogrid">
 
-  <div class ="pic1"><img src="./img/portfolio/heart.jpg" alt="heart" class="enlarge"></div>
-  <div class ="pic2"><img src="./img/portfolio/world_in_a_pill.jpg" alt="world in a pill" class="enlarge"></div>
-  <div class ="pic3"><img src="./img/portfolio/party.jpg" alt="party explosion" class="enlarge"></div>
-  <div class ="pic4"><img src="./img/portfolio/sun-egg.jpg" alt="egg sunset" class="enlarge"></div>
+ 
+  
+  <div class ="pic1"><img id="myImg" src="./img/portfolio/heart.jpg" alt="heart" onclick=somefunct(this) ></div>
+  <div class ="pic2"><img id="myImg2" src="./img/portfolio/world_in_a_pill.jpg" alt="world in a pill"onclick=somefunct(this) ></div>
+  <div class ="pic3"><img id="myImg3" src="./img/portfolio/party.jpg"  alt="party explosion" onclick=somefunct(this)></div>
+  <div class ="pic4"><img id="myImg4" src="./img/portfolio/sun-egg.jpg" alt="egg sunset"onclick=somefunct(this) ></div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="images">
+  <div id="caption"></div>
 </div>
 
-<script type="text/javascript" src="./javascript/hamburger.js"></script>
-<script type="text/javascript" src="./javascript/smooth.scroll.js"></script>
+
 
 <span class="sun"> <img src="./img/footer/sun/sun.gif" alt="happy-sun"></span>
+<span class="megu"> <img src="./img/footer/skateme.gif" alt="megu"></span>
 <div class="paracontainer">
   <div class="paraslider"></div>
 </div>
 <div class="sectiontext_footer">
-<p>Made by Max  <br> <br> &copy; 2020<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script></p>
+<p>Made by Max  <br> &copy; 2020<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script></p>
 </div>
+
+
+
+<script type="text/javascript" src="./javascript/hamburger.js"></script>
+<script type="text/javascript" src="./javascript/smooth.scroll.js"></script>
+<script type="text/javascript" src="./javascript/enlarge-image.js"></script>
+
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </html>
+</html>

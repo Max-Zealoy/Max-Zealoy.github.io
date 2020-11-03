@@ -270,8 +270,6 @@ nav a:hover {
   
 }
 
-
-
 .sectiontext {
   padding: 15px;
   text-align: center;
@@ -289,17 +287,14 @@ nav a:hover {
   -moz-box-shadow: 10px 10px 5px #7396af;
   -webkit-box-shadow: 10px 10px 5px #7396af;
   box-shadow: 10px 10px 5px #7396af;
-  -moz-border-radius:25px;
-  -webkit-border-radius:25px;
-  border-radius:25px;
+  -moz-border-radius:60px;
+  -webkit-border-radius:60px;
+  border-radius:60px;
   position: relative;
   margin-left: -1%;
 
 
 }
-
-
-
 
 .parallax_img {
 	height: 800px;
@@ -379,9 +374,9 @@ padding: 80px 0px 0px 0px;
 }
 
 #photogrid{
-    gap: 20px;
+    gap: 40px;
     margin: auto;
-    width: 60%;
+    width: 50%;
     display: grid;
     margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -407,24 +402,42 @@ position: relative;
   font-size: smaller;
   font-family: monospace;
   position: relative;
-  margin-top: 60px;
-  background-color: #f6f6f6eb;
-}
-
-.enlarge:on-click{
-  position:relative;
-  top:-25px;
-  left:-35px;
-  width:500px;
-  height:auto;
-  display:block;
-  z-index:999;
+  margin-top: -172px;
 }
 
 .sun{
   position: absolute;
   right: 30px;
-  margin-top: -160px;
+  margin-top: -70px;
+  z-index: 1;
+  width: 120px;
+}
+
+.megu img{
+
+  position: absolute;
+    height: auto;
+    width: 20px;
+    margin-top: 107px;
+    z-index: 1;
+    animation: skate 120s infinite;
+
+}
+
+@keyframes skate{
+
+  0% {   margin-left: 0px;
+
+  }
+
+  98% {   margin-left: 99%; opacity: 1;
+
+  }
+
+
+  100% {margin-left: 99%; opacity: 0;
+  
+}
 }
 
 .paracontainer{
@@ -433,9 +446,9 @@ position: relative;
   }
   
   .paraslider{
-    background: url("../img/footer/footerback2.jpg") repeat-x;
-    width: 11460px; /* picture size times x3 */
-    height: 153px;
+    background: url("../img/footer/footer.jpg") repeat-x;
+    width: 11120px; /* picture size times x3 */
+    height: 148px;
     animation:slide  40s 0s linear infinite;
     
   }
@@ -445,8 +458,82 @@ position: relative;
   
     0%     { -webkit-transform: translate3d( 0%, 0px, 0px); 
     }
-     100%     { -webkit-transform: translate3d(-3820px, 0px, 0px); }
+     100%     { -webkit-transform: translate3d(-3840px, 0px, 0px); }
   }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(44 54 54 / 86%);
+  }
+
+  #myImg, #myImg2,#myImg3,#myImg4,#jewelry {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Modal Content (Image) */
+.modal-content {
+ 
+  margin: auto;
+  display: block;
+  border: #abc1d4 solid 4px;
+  width: 50%;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-size: xx-large;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15%;
+  color: #ffffff; /*fallback color */
+  color: #dedfe0;
+  font-size: 110px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
   
 /*smaller devices */
 @media screen and (max-width: 1030px) {
@@ -511,12 +598,58 @@ position: relative;
 }
 .sun {
   position: absolute;
-  right: 10px;
-  width: 100px;
-  margin-top: -120px;
+  right: 5px;
+  width: 70px;
+  margin-top: -18px;
 
 }
+.megu img{
+
+    width: 17px;
+    margin-top: 114px;
+    animation: skate 40s infinite;
+
 }
+
+@keyframes skate{
+
+  0% {   margin-left: 0px;
+
+  }
+
+  95% {   margin-left: 95%; opacity: 1;
+
+  }
+
+
+  100% {margin-left: 95%; opacity: 0;
+  
+}
+
+}
+
+.modal-content {
+  width: 90%;
+  margin-top: 25%;
+}
+
+#caption {
+  font-size: x-large;
+}
+.close {
+  top: 10%;
+  right: 5%;
+}
+
+}
+@media screen and (max-width: 740px) {
+ 
+    .close {
+      top: 55%;
+      right: 6%;
+      font-size: 80px;
+  }
+  }
    
   @media screen and (max-width: 350px) {
     body{ 
