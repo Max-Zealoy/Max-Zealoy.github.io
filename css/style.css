@@ -674,7 +674,6 @@ position: relative;
 @media screen and (max-width: 740px) {
  
     .close {
-      top: 55%;
       right: 6%;
       font-size: 80px;
   }
