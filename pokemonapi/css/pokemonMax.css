@@ -28,7 +28,8 @@ body {
 
 
 .jigglyhappy{
-    width: 266px;
+    width: 221px;
+    margin-top: -89px;
 
 }
 .sing{
@@ -500,6 +501,11 @@ h2.card-title-click{
 
     h2 {
         font-size: medium;
+    }
+
+    .jigglyhappy {
+        width: 156px;
+        margin-top: -89px;
     }
 
     .pokemon img {
