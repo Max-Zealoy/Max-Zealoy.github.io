@@ -10,21 +10,12 @@ const fetchOption = {
     mode: 'cors',
 };
 
-$('form').on('submit', function(e){
 
-
-  
-   
-});
-
-$('.form').on('click touchstart', function(e) {
+$('.submitButton').on('click touchstart', function(e) {
+    e.preventDefault();
     alert("submit");
 
-});
-    $('.submitButton').on('click touchstart', function(e) {
-        alert("submit");
-    
-    });
+
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
 
@@ -44,6 +35,7 @@ $('.form').on('click touchstart', function(e) {
 
         document.getElementById("myForm").reset(); //tar bor inskrivet input fast inte bilden.
     
+});
 });
 
 
