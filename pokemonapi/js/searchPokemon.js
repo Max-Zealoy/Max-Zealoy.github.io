@@ -14,6 +14,15 @@ $('form').on('submit', function(e){
 
     e.preventDefault();
 
+  
+   
+});
+
+$('.submitButton').on('click touchstart', function(e) {
+    e.preventDefault();
+    alert("submit");
+
+
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
 

@@ -433,6 +433,8 @@ h2.card-title-click{
         }
         form{
         text-align: center;
+        position: relative;
+        z-index: 2;
         }
         form input{
             width: 203px;
