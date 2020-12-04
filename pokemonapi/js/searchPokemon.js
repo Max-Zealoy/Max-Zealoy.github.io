@@ -11,26 +11,8 @@ const fetchOption = {
 };
 
 
-
-
-
-    var tap = true;
-    document.addEventListener('touchstart',function(e) {
-       tap = true;
-    });
-    document.addEventListener('touchmove',function(e) {
-      tap = false;
-    });
-    document.addEventListener('touchend',function(e) {
-       if(tap) {
-          //users tapped the screen
-          
-        }
-    });  
-
-    $('.submitButton').on('click touchstart', function(e) {
+    $('.submitButton').on('click', function(e) {
         e.preventDefault();
-        alert("submit");
 
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
@@ -49,7 +31,6 @@ const fetchOption = {
         console.log(result);
         getBattlePokemon(result)
 
-        document.getElementById("myForm").reset(); //tar bor inskrivet input fast inte bilden.
     
 });
 });
