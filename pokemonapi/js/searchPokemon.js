@@ -11,8 +11,13 @@ const fetchOption = {
 };
 
 
+
     $('.submitButton').on('click', function(e) {
         e.preventDefault();
+        if (event.keyCode === 13 ) {
+            event.preventDefault();
+            document.getElementById("add").click();
+           }
 
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
