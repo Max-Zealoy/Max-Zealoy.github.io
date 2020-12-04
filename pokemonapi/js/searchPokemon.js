@@ -12,12 +12,11 @@ const fetchOption = {
 
 
 
-    $('.submitButton').on('click', function(e) {
+
+var input = document.getElementById("add");
+input.addEventListener("click", function(e) {
         e.preventDefault();
-        if (event.keyCode === 13 ) {
-            event.preventDefault();
-            document.getElementById("add").click();
-           }
+        
 
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
@@ -36,6 +35,7 @@ const fetchOption = {
         console.log(result);
         getBattlePokemon(result)
 
+        document.getElementById("myForm").reset(); //tar bor inskrivet input fast inte bilden.
     
 });
 });
