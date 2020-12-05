@@ -91,8 +91,8 @@ function ChooseTeam(pokemons){
 function getRandomPokemon(pokemonArray) {
 
 
-
-	return pokemonArray[ Math.floor(Math.random() *(pokemonArray.length)) ]; //Random pokemon
+ 
+	return pokemonArray[Math.floor(0.1 * Math.random() *(pokemonArray.length)) ]; //Random pokemon
 }
 
 const flatten = (a,b) => [...a,...b];
