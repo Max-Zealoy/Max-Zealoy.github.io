@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" type="image/icon" href="./favicon.ico">
   <title>Max PokeSite</title>
   <link rel="stylesheet" href="./css/pokemonMax.css" />
@@ -40,9 +39,9 @@ ondblclick="this.src=('./img/clear.gif'); audio3.pause () " style="background:no
 </div>
 <h1>A school project learning Api <br>by Max</h1>
 
-<form id="myForm" class="myForm" action="">
+<form id="myForm" class="myForm">
     <h2>What type of pokemon do you want a team against?<br> you can also combine types</h2>
-    <input type="text" placeholder="fire,ground,ice etc.." >
+    <input type="text" id="input" placeholder="fire,ground,ice etc.." >
     <button id="add" type='submit' class="submitButton" value="Search">Search</button>
 
 </form>
@@ -60,8 +59,10 @@ ondblclick="this.src=('./img/clear.gif'); audio3.pause () " style="background:no
     <ol id="pokedex"></ol>
   </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="./js/indexPokemon.js"></script>
   <script src="./js/searchPokemon.js"></script>
 

@@ -12,11 +12,10 @@ const fetchOption = {
 
 
 
-
 var input = document.getElementById("add");
-input.addEventListener("click", function(e) {
-        e.preventDefault();
-        
+add.addEventListener("click", function(e) {
+    e.preventDefault();
+  
 
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
@@ -24,7 +23,7 @@ input.addEventListener("click", function(e) {
     
     let trainerTypeCalls = types.map( elem =>
          {
-        return fetch (` https://pokeapi.co/api/v2/type/${elem}/`, fetchOption);
+        return fetch (`https://pokeapi.co/api/v2/type/${elem}/`, fetchOption);
 
     
     //https://pokeapi.co/api/v2/type
@@ -36,7 +35,7 @@ input.addEventListener("click", function(e) {
         getBattlePokemon(result)
 
         document.getElementById("myForm").reset(); //tar bor inskrivet input fast inte bilden.
-    
+      
 });
 });
 

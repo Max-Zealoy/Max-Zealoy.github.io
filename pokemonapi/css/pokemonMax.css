@@ -548,9 +548,10 @@ h2.card-title-click{
     }
 
     .boxitemssecond img{
-        height: 200px;
+        height: 180px;
         margin-top: -41px;
         margin-bottom: 2px;
+        margin-top: -40px;
     }
 
     .outerboxitemsecond{
@@ -562,6 +563,7 @@ h2.card-title-click{
         border-radius: 5%;
         border: solid;
         background-color: #ffb6ac;
+        margin-top: 45px;
     }
 
     p.card-type {
@@ -588,7 +590,7 @@ h2.card-title-click{
     
     h2.card-title-click {
         font-weight: bold;
-        font-size: 39px;
+        font-size: 30px;
     }
 
 #pokedex {
@@ -636,7 +638,7 @@ h2.card-title-click{
   
 #closeBtn {
     position: absolute;
-    top: -245px;
+    top: -200px;
     height: inherit;
     margin: auto;
     right: 0%;
