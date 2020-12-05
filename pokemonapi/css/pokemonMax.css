@@ -51,6 +51,10 @@ body {
     width:380px;
 }
 
+.small{
+    
+    text-transform:lowercase
+}
 .pich{
     width: 160px;
 }
